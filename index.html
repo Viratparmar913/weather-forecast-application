@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>Weather Application Project</title>
+  </head>
+  <body>
+    <header>
+      <h2>Weather Application Project</h2>
+    </header>
+
+    <main>
+      <section id="search-container">
+        <aside>
+          <div id="selector" class="selector-hidden cursor-pointer"></div>
+          
+          <form id="search">
+            <input type="text" class="px-4" placeholder="Enter City Name" />
+            <button type="submit" id="search-btn">Search</button>
+          </form>
+         
+          <button id="clear-history" class="md:m-0 m-1">Clear Search History</button>
+          <hr />
+        </aside>
+        <div id="previous-searches" class="cursor-pointer"></div>
+      </section>
+      <section id="weather-display">
+        <div id="main-card">
+          <div id="todays-day">
+            <span id="city-name"></span> - <span id="todays-date"></span>
+          </div>
+          <hr />
+          <div id="todays-info">
+            <div><img src="" id="today-img" /></div>
+            <span id="today-max"></span>
+            <span id="today-min"></span>
+            <span id="today-wind"></span>
+            <span id="today-humidity"></span>
+            <span id="today-uv" class="severe-uv"></span>
+          </div>
+        </div>
+        <div class="five-day">5 day's forecast</div>
+        <div id="container-daily-cards">
+          <div class="daily-card md:m-0 m-5" data-fiveday="0">
+            <p class="day"></p>
+            <hr />
+            <img src="" class="weather-img" />
+            <p class="max"></p>
+            <p class="min"></p>
+            <p class="wind"></p>
+            <p class="humidity"></p>
+          </div>
+          <div class="daily-card md:m-0 m-5" data-fiveday="1">
+            <p class="day"></p>
+            <hr />
+            <img src="" class="weather-img" />
+            <p class="max"></p>
+            <p class="min"></p>
+            <p class="wind"></p>
+            <p class="humidity"></p>
+          </div>
+          <div class="daily-card md:m-0 m-5" data-fiveday="2">
+            <p class="day"></p>
+            <hr />
+            <img src="" class="weather-img" />
+            <p class="max"></p>
+            <p class="min"></p>
+            <p class="wind"></p>
+            <p class="humidity"></p>
+          </div>
+          <div class="daily-card md:m-0 m-5" data-fiveday="3">
+            <p class="day"></p>
+            <hr />
+            <img src="" class="weather-img" />
+            <p class="max"></p>
+            <p class="min"></p>
+            <p class="wind"></p>
+            <p class="humidity"></p>
+          </div>
+          <div class="daily-card md:m-0 m-5" data-fiveday="4">
+            <p class="day"></p>
+            <hr />
+            <img src="" class="weather-img" />
+            <p class="max"></p>
+            <p class="min"></p>
+            <p class="wind"></p>
+            <p class="humidity"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/cities.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

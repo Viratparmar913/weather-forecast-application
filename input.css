@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+}
+
+:root {
+  font-family: "Nunito Sans", sans-serif;
+}
+h1 {
+  @apply md:text-5xl text-3xl;
+}
+.five-day,
+button,
+#main-card,
+.daily-card {
+  @apply bg-white shadow-[5px_5px_5px_rgb(143,143,143)] border text-center bg-[linear-gradient(180deg,blue,lightblue)] md:p-[5px] p-[3px] md:rounded-[15px] rounded-[7px] border-solid border-[rgb(143,143,143)];
+}
+#container-daily-cards {
+  @apply md:grid md:grid-cols-[15%_15%_15%_15%_15%] md:gap-x-[3%] justify-center;
+}
+#todays-info {
+  @apply grid grid-cols-[25%_25%_25%] grid-rows-[45%_45%] justify-center items-center;
+}
+#main-card span,
+#main-card img {
+  @apply p-[5px];
+}
+#todays-day {
+  @apply text-center;
+}
+#main-card {
+  @apply w-[87%] mb-2.5 mx-auto;
+}
+header {
+  @apply text-center w-[90%] mb-2.5 m-auto;
+}
+.weather-display {
+  @apply grid grid-rows-[40%_10%_45%];
+}
+.five-day {
+  @apply text-center w-[87%] mb-[5px] mx-auto;
+}
+span {
+  @apply shadow-[2px_2px_5px_rgba(119,136,153,0.397)] rounded-[5px];
+}
+main {
+  @apply grid grid-cols-[20%_70%] justify-center;
+}
+#search-container,header {
+  @apply bg-[blue] border shadow-[5px_5px_5px_rgb(143,143,143)] md:mb-2.5 md:p-[5px] md:rounded-[15px] rounded-[7px] border-solid border-[rgb(143,143,143)];
+  display: relative;
+}
+#search-container input {
+  @apply bg-[lightblue] md:rounded-[15px] rounded-[7px] border-[none] focus-visible:bg-[blue];
+}
+#search-container {
+  @apply md:grid md:grid-cols-[auto] justify-center;
+  align-items: start;
+}
+.five-day,
+#todays-day {
+  @apply text-[2rem] font-semibold;
+}
+.favorable-uv {
+  @apply bg-[rgba(51,214,51,0.541)];
+}
+.moderate-uv {
+  @apply bg-[rgba(214,176,51,0.541)];
+}
+.severe-uv {
+  @apply bg-[rgba(214,51,51,0.541)];
+}
+button:hover {
+  @apply bg-[linear-gradient(180deg,lightblue,blue)];
+}
+button:active {
+  @apply text-[mediumblue] shadow-none;
+}
+#search {
+  @apply flex flex-wrap justify-center gap-0.5 md:m-0 m-2;
+}
+.prev-searched {
+  @apply bg-[lightblue] block text-center mb-[5px] m-[3px] hover:bg-[blue] hover:border-[3px] hover:border-solid hover:border-[lightblue];
+}
+#todays-date {
+  @apply text-2xl;
+}
+.weather-img {
+  @apply max-w-[80%];
+}
+.selector-visible {
+  @apply block relative bg-[blue] shadow-[5px_5px_5px_lightgray] min-w-[80%] rounded-[10px] border-[5px] border-solid border-[lightblue] left-[0%] right-0 top-0;
+}
+.selector-visible > * {
+  @apply flex flex-wrap justify-center text-center;
+}
+.selector-hidden {
+  @apply hidden cursor-pointer;
+}
+aside {
+  @apply grid justify-center gap-y-4;
+}
+#city-name,
+#todays-date {
+  @apply shadow-none;
+}
+@media screen and (max-width: 960px) {
+  main {
+    @apply block justify-center;
+  }
+  #search-container {
+    @apply w-[87%]  mt-auto mb-4 mx-auto;
+  }
+}
