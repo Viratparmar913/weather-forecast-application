@@ -2,6 +2,7 @@ const mainEl = $("#main");
 // Default coordinates for initial load (Delhi)
 let lat = "28.666668";
 let lon = "77.216667";
+
 //let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&exclude=hourly`;
 let url = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=alerts&appid=${apiKey}`;
 
