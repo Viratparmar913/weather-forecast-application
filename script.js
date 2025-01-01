@@ -1,8 +1,4 @@
-
-
-//31b1715eea27e8546c5192709d456eb7
 const mainEl = $("#main");
-
 // Default coordinates for initial load (Delhi)
 let lat = "28.666668";
 let lon = "77.216667";
